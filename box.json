@@ -1,0 +1,46 @@
+{
+    "name":"CFWheels Template - Hello World",
+    "version":"1.0.13",
+    "author":"Peter Amiri",
+    "shortDescription":"CFWheels Template - Hello World",
+    "location":"ForgeboxStorage",
+    "slug":"cfwheels-template-helloworld",
+    "directory":"",
+    "createPackageDirectory":false,
+    "packageDirectory":"",
+    "homepage":"https://github.com/bpamiri/cfwheels-template-helloworld",
+    "documentation":"https://github.com/bpamiri/cfwheels-template-helloworld",
+    "changelog":"https://github.com/bpamiri/cfwheels-template-helloworld/commits/main",
+    "bugs":"https://github.com/bpamiri/cfwheels-template-helloworld/issues",
+    "repository":{
+        "type":"git",
+        "URL":"https://github.com/bpamiri/cfwheels-template-helloworld"
+    },
+    "keywords":[
+        "mvc",
+        "rails",
+        "wheels",
+        "cfwheels",
+        "template",
+        "helloworld"
+    ],
+    "Dependencies":{
+        "cfwheels-core":"^2.2",
+        "cfwheels-template-base":"^2.2"
+    },
+    "installPaths":{
+        "cfwheels-core":"wheels/",
+        "cfwheels-template-base":"base/"
+    },
+    "scripts":{
+        "postInstallAll":"rm base/box.json --force && cp config/ base/config/ --recurse && cp views/ base/views/ --recurse && cp base/ ./ --recurse && rm base/ --recurse --force"
+    },
+    "type":"mvc",
+    "private":false,
+    "license":[
+        {
+            "type":"Apache License 2.0",
+            "URL":"https://github.com/cfwheels/cfwheels/blob/master/LICENSE"
+        }
+    ]
+}
