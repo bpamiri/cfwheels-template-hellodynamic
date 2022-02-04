@@ -35,7 +35,7 @@
     "scripts":{
         "postInstallAll":"rm base/box.json --force && cp config/ base/config/ --recurse && cp views/ base/views/ --recurse && cp base/ ./ --recurse && rm base/ --recurse --force"
     },
-    "type":"mvc",
+    "type":"cfwheels-templates",
     "private":false,
     "license":[
         {
