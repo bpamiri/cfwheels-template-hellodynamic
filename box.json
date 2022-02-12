@@ -1,6 +1,6 @@
 {
     "name":"CFWheels Template - Hello Dynamic",
-    "version":"1.0.4",
+    "version":"1.0.5",
     "author":"Peter Amiri",
     "shortDescription":"CFWheels Template - Hello Dynamic",
     "location":"ForgeboxStorage",
@@ -25,12 +25,12 @@
         "hellodynamic"
     ],
     "Dependencies":{
-        "cfwheels-core":"^2.2",
-        "cfwheels-base":"^2.2"
+        "cfwheels-base":"^2.2",
+        "cfwheels-core":"^2.2"
     },
     "installPaths":{
-        "cfwheels-core":"wheels/",
-        "cfwheels-base":"base/"
+        "cfwheels-base":"base/",
+        "cfwheels-core":"wheels/"
     },
     "scripts":{
         "postInstallAll":"rm base/box.json --force && cp config/ base/config/ --recurse && cp views/ base/views/ --recurse && cp base/ ./ --recurse && rm base/ --recurse --force"
